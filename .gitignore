@@ -1,0 +1,84 @@
+# ──────────────────────────
+# 1. SO & Editor genéricos
+# ──────────────────────────
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Sistema
+.DS_Store            # (si un día clonas en macOS)
+*.swp                # archivos de swap de vim
+*.bak
+*.tmp
+
+# ──────────────────────────
+# 2. IDEs y herramientas
+# ──────────────────────────
+.idea/               # IntelliJ / PyCharm
+.vscode/             # VS Code
+*.iml
+*.ipr
+*.iws
+
+# ──────────────────────────
+# 3. Java / Maven / Gradle
+# ──────────────────────────
+target/              # Maven
+out/                 # IntelliJ
+.build/              # custom
+*.class
+# Gradle
+.gradle/
+build/
+# Logs
+*.log
+
+# ──────────────────────────
+# 4. Python
+# ──────────────────────────
+__pycache__/
+*.py[cod]
+.stenv               # env files by some editors
+# Entornos virtuales
+env/
+venv/
+.venv/
+
+# ──────────────────────────
+# 5. Node.js (por si usas scripts)
+# ──────────────────────────
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# ──────────────────────────
+# 6. Docker / CI artefacts
+# ──────────────────────────
+# Evita subir variables sensibles
+.env
+.env.*
+.docker/
+docker-compose.override.yml
+
+# ──────────────────────────
+# 7. Data / resultados temporales
+# ──────────────────────────
+# Salidas de pruebas o datos de ejemplo
+*.sqlite
+*.csv
+tests/output/
+tmp/
+
+# ──────────────────────────
+# 8. Documentación generada
+# ──────────────────────────
+/docs/plantuml-gen/
+*.png.cache
+
+# ──────────────────────────
+# 9. Permitir explícitamente archivos de config de ejemplo
+# ──────────────────────────
+!.env.sample
+!docker-compose.override.sample.yml
